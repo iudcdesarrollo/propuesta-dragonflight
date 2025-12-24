@@ -111,7 +111,7 @@ const DragonOverlay = () => {
               className="w-full h-full object-contain"
               onEnded={() => setShowDragon(false)}
             >
-              <source src="/img/1223.mp4" type="video/mp4" />
+              <source src={`${import.meta.env.BASE_URL}img/1223.mp4`} type="video/mp4" />
             </video>
           </div>
         </motion.div>
