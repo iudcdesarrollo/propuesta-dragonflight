@@ -245,12 +245,12 @@ const MarketingPlanCard = ({ plan, index, isInView, isExpanded, onToggle }) => {
         className={`w-full mt-3 sm:mt-4 py-2.5 sm:py-3 px-4 rounded-xl border transition-all duration-200 flex items-center justify-center gap-2 text-sm font-medium ${getBtnStyle()}`}
       >
         <span>{isExpanded ? 'Ocultar' : 'Ver plan completo'}</span>
-        <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isExpanded ? 'rotate-180' : ''}`} />
+        <ChevronDown className={`w-4 h-4 transition-transform duration-300 ease-out ${isExpanded ? 'rotate-180' : ''}`} />
       </button>
 
       {/* Expandable Content */}
       <div
-        className={`grid transition-all duration-300 ease-in-out ${
+        className={`grid transition-all duration-500 ease-out ${
           isExpanded ? 'grid-rows-[1fr] opacity-100 mt-3' : 'grid-rows-[0fr] opacity-0'
         }`}
       >
