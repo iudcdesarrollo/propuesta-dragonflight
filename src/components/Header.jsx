@@ -57,7 +57,7 @@ const Header = () => {
                   playsInline
                   className="w-full h-full object-cover scale-110"
                 >
-                  <source src="/img/1223.mp4" type="video/mp4" />
+                  <source src={`${import.meta.env.BASE_URL}img/1223.mp4`} type="video/mp4" />
                 </video>
               </div>
               <div className="absolute inset-0 rounded-lg sm:rounded-xl bg-gradient-to-br from-amber-400/20 to-amber-600/10 blur-md opacity-40 group-hover:opacity-60 transition-opacity duration-300" />
