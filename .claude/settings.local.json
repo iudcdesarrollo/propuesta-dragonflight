@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(npm create:*)",
+      "Bash(npm install)",
+      "Bash(npm install:*)",
+      "Bash(npx tailwindcss:*)",
+      "Bash(./node_modules/.bin/tailwindcss:*)",
+      "Bash(cat:*)",
+      "Bash(npm run build:*)",
+      "Bash(npm ls:*)",
+      "Bash(grep:*)",
+      "Bash(node:*)",
+      "Bash(timeout:*)",
+      "Bash(copy \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\propuestaair\\\\img\\\\1223.mp4\" \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\propuestaair\\\\public\\\\img\\\\1223.mp4\")",
+      "Bash(cmd /c \"if not exist \"\"c:\\\\Users\\\\Usuario\\\\Desktop\\\\propuestaair\\\\public\\\\img\"\" mkdir \"\"c:\\\\Users\\\\Usuario\\\\Desktop\\\\propuestaair\\\\public\\\\img\"\" && xcopy \"\"c:\\\\Users\\\\Usuario\\\\Desktop\\\\propuestaair\\\\img\\\\1223.mp4\"\" \"\"c:\\\\Users\\\\Usuario\\\\Desktop\\\\propuestaair\\\\public\\\\img\\\\\"\" /Y\")",
+      "Bash(cmd /c \"dir \"\"c:\\\\Users\\\\Usuario\\\\Desktop\\\\propuestaair\\\\public\"\"\")",
+      "Bash(powershell -Command \"New-Item -ItemType Directory -Force -Path ''c:\\\\Users\\\\Usuario\\\\Desktop\\\\propuestaair\\\\public\\\\img''; Copy-Item ''c:\\\\Users\\\\Usuario\\\\Desktop\\\\propuestaair\\\\img\\\\1223.mp4'' -Destination ''c:\\\\Users\\\\Usuario\\\\Desktop\\\\propuestaair\\\\public\\\\img\\\\1223.mp4''\")",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

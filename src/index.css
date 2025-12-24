@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000000;
+  color: #f5f5f7;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  font-size: 17px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  color: #ffffff;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+
+/* Apple-style gradient text */
+.gradient-text {
+  background: linear-gradient(90deg, #d4af37 0%, #f5d76e 50%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-gold {
+  background: linear-gradient(90deg, #c9a227 0%, #f5d76e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Apple-style glass card */
+.glass-card {
+  background: rgba(28, 28, 30, 0.72);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+}
+
+/* Minimal card style */
+.minimal-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.minimal-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(212, 175, 55, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Apple-style glow */
+.glow-gold {
+  box-shadow: 0 0 80px rgba(212, 175, 55, 0.15);
+}
+
+/* Apple-style buttons */
+.btn-primary {
+  background: #d4af37;
+  color: #000000;
+  font-weight: 500;
+  padding: 14px 28px;
+  border-radius: 980px;
+  font-size: 17px;
+  letter-spacing: -0.01em;
+  transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: #e5c04b;
+  transform: scale(1.02);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #d4af37;
+  font-weight: 500;
+  padding: 14px 28px;
+  border-radius: 980px;
+  font-size: 17px;
+  letter-spacing: -0.01em;
+  transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(212, 175, 55, 0.5);
+}
+
+/* Plan cards - minimal Apple style */
+.plan-card-1,
+.plan-card-2,
+.plan-card-3 {
+  border-left: none;
+  background: rgba(28, 28, 30, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.plan-card-3 {
+  background: rgba(212, 175, 55, 0.03);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+/* Smooth hover transitions */
+.card-hover {
+  transition: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px) scale(1.01);
+  border-color: rgba(212, 175, 55, 0.25);
+}
+
+/* Apple-style scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.3);
+  color: white;
+}
+
+/* Section spacing */
+.section-padding {
+  padding: 120px 0;
+}
+
+/* Text colors - mejor contraste */
+.text-secondary {
+  color: #d1d1d6;
+}
+
+/* Mejora de contraste global */
+p, span, li {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Asegurar textos blancos legibles */
+.text-white\/60 {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.text-white\/70 {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.text-white\/80 {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Subtle animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-glow {
+  animation: glow 3s ease-in-out infinite;
+}
