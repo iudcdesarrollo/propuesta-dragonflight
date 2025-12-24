@@ -8,12 +8,12 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-0 sm:min-h-[90vh] flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-0 flex items-center justify-center relative overflow-hidden">
       {/* Animated gradient orbs */}
       <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-amber-500/8 rounded-full blur-[150px] pointer-events-none animate-pulse" />
       <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-amber-600/5 rounded-full blur-[100px] pointer-events-none" />
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-20 pb-8 sm:py-20 lg:py-24 relative z-10">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-20 pb-8 sm:pt-24 sm:pb-10 relative z-10">
         <div className="text-center">
           {/* Badge */}
           <motion.div
@@ -72,7 +72,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="mt-8 sm:mt-16"
+            className="mt-8 sm:mt-10"
           >
             <div className="flex justify-center gap-6 sm:gap-12 md:gap-20">
               {[
