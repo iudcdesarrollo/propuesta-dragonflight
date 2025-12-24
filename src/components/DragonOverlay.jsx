@@ -101,7 +101,7 @@ const DragonOverlay = () => {
           className={`fixed ${pos.className} z-30 pointer-events-none`}
         >
           <div
-            className={`relative ${pos.size === 'small' ? 'w-56 h-56 lg:w-64 lg:h-64 xl:w-72 xl:h-72' : 'w-72 h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96'}`}
+            className={`relative ${pos.size === 'small' ? 'w-40 h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56' : 'w-48 h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64'}`}
             style={{ mixBlendMode: 'screen' }}
           >
             <video
